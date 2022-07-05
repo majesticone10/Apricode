@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GamesController;
+use App\Http\Controllers\GameSortController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function() {
     return view('home');
 })->name('home');
+
 Route::resource('/games', GamesController::class);
+
+Route::get('games/sort/{id}', [GameSortController::class, 'sort'])->name('sort');

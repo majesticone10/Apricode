@@ -75,10 +75,10 @@
                 <table class="table text-center align-middle">
                     <thead>
                         <tr>
-                            <th scope="col">№</th>
-                            <th scope="col"><a href="" title="Сортировать по названию">Название игры</a></th>
-                            <th scope="col"><a href="" title="Сортировать по студии">Студия разработчик</a></th>
-                            <th scope="col"><a href="" title="Сортировать по жанру">Жанры</a></th>
+                            <th scope="col"><a href="{{route('sort', $sort='id')}}" title="Сортировать по номеру">№</a></th>
+                            <th scope="col"><a href="{{route('sort', $sort='name')}}" title="Сортировать по названию">Название игры</a></th>
+                            <th scope="col"><a href="{{route('sort', $sort='studio')}}" title="Сортировать по студии">Студия разработчик</a></th>
+                            <th scope="col"><a href="{{route('sort', $sort='genre')}}" title="Сортировать по жанру">Жанры</a></th>
                             <th scope="col">Действия</th>
                         </tr>
                     </thead>
